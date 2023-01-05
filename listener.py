@@ -1,10 +1,11 @@
 import socket
 import time
+
 HOST = "localhost"
 PORT = 3000
 
 s = socket.socket()
-s.bind(HOST, PORT)
+s.bind((HOST, PORT))
 print(f"Waiting for connection on port: {PORT}")
 
 s.listen(5)
@@ -13,7 +14,7 @@ conn, address = s.accept()
 print(f"Receiving request from IP: {address}")
 
 messages = [
-    "a", "b", "c", "d"
+    "msg A", "msg B", "msg C", "msg D"
 ]
 
 for m in messages:
