@@ -1,9 +1,9 @@
 secrets = {
-    "api_key": "YlFORv6jzWc6hMPn96k8N1Afp",
-    "api_key_secret": "UdLCSApckDaMkMc0HgkWMzL58CimBskcj8TyPZf3RBdH4DqbAK",
-    "bearer_token": r"AAAAAAAAAAAAAAAAAAAAAOELIgEAAAAANL%2F3ns3oZFGYK32zUkXo3SsO58g%3DeMwo4oSOyQj2Z1Xq6PCr3wGrdT5v4HmLRMfNavQB7CZ0dJ9Pzp",
-    "acess_token": "1313976654113447937-OEXIrnwwGwUftI32jnYm4JLxOkaxTW",
-    "acess_token_secret": "b4pSUeYoTeNYmHzOgwcAUzBa6hw3cM5ayb6mVI1GQ9fig",
+    "api_key": "BZPMB0fphbgFq1LYOVKLIuqVU",
+    "api_key_secret": "9jiKZFawYwJjvETwrE8on9y7RBHp2tHseknqKar3AzgHRomVVo",
+    "bearer_token": r"AAAAAAAAAAAAAAAAAAAAAA0vlAEAAAAAshQIHv0jEIdIPavYlka2%2FdkhTPI%3DteS0bWQ8mIq2ipY8KkpjSpkEEdnwsp6j86HIi9Z8DWZ7jKfSjx",
+    "acess_token": "",
+    "acess_token_secret": "",
 }
 
 HOST = "localhost"
