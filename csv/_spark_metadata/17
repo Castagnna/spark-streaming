@@ -1,5 +1,0 @@
-v1
-{"path":"file:///home/danielcastagna/Documents/github/spark-streaming/csv/part-00000-00243c07-033e-4a56-82e0-8312cd672df0-c000.csv","size":771,"isDir":false,"modificationTime":1674950636256,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/danielcastagna/Documents/github/spark-streaming/csv/part-00001-2e5ea9ad-132c-4311-900a-8f0ad32da193-c000.csv","size":3,"isDir":false,"modificationTime":1674950636256,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/danielcastagna/Documents/github/spark-streaming/csv/part-00002-3dcbd2fd-eb17-4c8d-a0ab-c0932ae70942-c000.csv","size":126,"isDir":false,"modificationTime":1674950636256,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/danielcastagna/Documents/github/spark-streaming/csv/part-00003-aacc5a92-0b51-4145-87b0-dccb9f30ee91-c000.csv","size":3,"isDir":false,"modificationTime":1674950636252,"blockReplication":1,"blockSize":33554432,"action":"add"}
