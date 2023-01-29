@@ -1,10 +1,17 @@
+import shutil
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from config import HOST, PORT
 
+for item in ["./checkpoint", "./csv"]:
+    try:
+        shutil.rmtree(item)
+    except OSError as err:
+        print(f"Aviso: {err.strerror}")
+
 spark = SparkSession.builder.appName("Spark Streaming").getOrCreate()
 
-lines = (
+tweets = (
     spark.readStream
     .format("socket")
     .option("host", HOST)
@@ -12,15 +19,15 @@ lines = (
     .load()
 )
 
-words = lines.select(F.explode(F.split(F.col("value"), " ")).alias("word"))
-word_count = (
-    words
-    .groupBy("word")
-    .agg(F.count("*").alias("cnt"))
-    .orderBy(F.col("cnt").desc())
-    .limit(20)
+query = (
+    tweets.writeStream
+    .outputMode("append")
+    .option("encoding", "utf-8")
+    .format("csv")
+    .option("path", "./csv")
+    .option("checkpointLocation", "./checkpoint")
+    .start()
 )
-query = word_count.writeStream.outputMode("complete").option("encoding", "utf-8").format("console").start()
 
 # Append Mode - Somente as novas linhas anexadas na Tabela de Resultados
 # desde o último acionador serão gravadas no armazenamento externo.

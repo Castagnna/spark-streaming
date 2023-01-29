@@ -32,7 +32,7 @@ if response.status_code == 200:
         try:
             print(json.loads(item)["data"]["text"])
             print("="*50)
-            connection.send(json.loads(item)["data"]["text"].encode("latin1", "ignore"))
+            connection.send(json.loads(item)["data"]["text"].encode("utf-8", "ignore"))
         except:
             continue
 

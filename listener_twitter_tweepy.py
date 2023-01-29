@@ -19,7 +19,7 @@ class GetTweets(tweepy.StreamingClient):
     def on_tweet(self, tweet):
         print(tweet.text)
         print("="*50)
-        connection.send(tweet.text.encode('utf-8', 'ignore'))
+        connection.send(tweet.text.encode("utf-8", "ignore"))
 
 printer = GetTweets(bearer_token)
 printer.add_rules(tweepy.StreamRule(keyword))

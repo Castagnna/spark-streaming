@@ -1,0 +1,3 @@
+v1
+{"path":"file:///home/danielcastagna/Documents/github/spark-streaming/csv/part-00000-5f8e804e-cfe0-4791-a93f-18f98ff4adfb-c000.csv","size":122,"isDir":false,"modificationTime":1674950634556,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/danielcastagna/Documents/github/spark-streaming/csv/part-00001-f15f0f5f-de48-4d60-a162-2e558f804f6b-c000.csv","size":3,"isDir":false,"modificationTime":1674950634560,"blockReplication":1,"blockSize":33554432,"action":"add"}
